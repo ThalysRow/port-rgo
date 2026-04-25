@@ -1,6 +1,7 @@
 # Portfolio Desenvolvedor - React + TypeScript + Vite
 
-Este é um portfolio pessoal construído com React, TypeScript e Vite.
+Este é um portfolio pessoal construído com React, TypeScript e Vite.  
+Link do projeto: https://port-rgo.vercel.app/
 
 ## Tecnologias
 
