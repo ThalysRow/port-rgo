@@ -69,13 +69,13 @@ export const skills = [
   { name: "Spring Boot", iconName: "spring", level: 72 },
   { name: "NestJS", iconName: "nestjs", level: 70 },
   { name: "Angular", iconName: "angular", level: 68 },
-  { name: "React / Next.js", iconName: "code", level: 95 },
-  { name: "Node.js / Express", iconName: "server", level: 90 },
-  { name: "TypeScript", iconName: "layers", level: 92 },
-  { name: "PostgreSQL / MongoDB", iconName: "database", level: 85 },
+  { name: "React / Next.js", iconName: "react", level: 95 },
+  { name: "Node.js / Express", iconName: "nodejs", level: 90 },
+  { name: "TypeScript", iconName: "typescript", level: 92 },
+  { name: "PostgreSQL / MongoDB", iconName: "postgres", level: 85 },
   { name: "Tailwind CSS", iconName: "tailwind", level: 88 },
   { name: "Figma", iconName: "figma", level: 80 },
-  { name: "DevOps / Docker", iconName: "terminal", level: 75 },
+  { name: "DevOps / Docker", iconName: "docker", level: 75 },
   { name: "Cloud (AWS)", iconName: "globe", level: 70 },
 ];
 
