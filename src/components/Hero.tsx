@@ -1,4 +1,4 @@
-import { X, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/portfolio';
 
@@ -84,14 +84,6 @@ export default function Hero() {
             className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/25"
           >
             <LinkedInIcon />
-          </a>
-          <a
-            href={personalInfo.social.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/25"
-          >
-            <X className="w-6 h-6" />
           </a>
           <a
             href={`mailto:${personalInfo.email}`}

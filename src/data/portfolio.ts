@@ -4,11 +4,10 @@ export const personalInfo = {
   description:
     "Transformando ideias em experiências digitais extraordinárias. Apaixonado por criar interfaces modernas e sistemas robustos que fazem a diferença.",
   location: "Brasil",
-  email: "contato@ThalysRow",
+  email: "thalysrogue@gmail.com",
   social: {
-    github: "https://github.com/thalysrow",
-    linkedin: "https://linkedin.com/in/thalysrow",
-    twitter: "https://twitter.com/thalysrow",
+    github: "https://github.com/ThalysRow",
+    linkedin: "https://www.linkedin.com/in/thalys-row",
   },
   stats: {
     projects: 50,

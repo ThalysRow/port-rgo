@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Mail, Send, MapPin } from 'lucide-react';
 import { personalInfo } from '../data/portfolio';
-import { X } from 'lucide-react';
 
 const GitHubIcon = () => (
   <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -99,14 +98,6 @@ export default function Contact() {
                 className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-indigo-500/50 transition-all hover:scale-105"
               >
                 <LinkedInIcon />
-              </a>
-              <a
-                href={personalInfo.social.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-indigo-500/50 transition-all hover:scale-105"
-              >
-                <X className="w-6 h-6" />
               </a>
             </div>
           </motion.div>
