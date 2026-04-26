@@ -17,10 +17,10 @@ const LinkedInIcon = () => (
 export default function Hero() {
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/20 via-slate-900 to-pink-900/20" />
+      <div className="absolute inset-0 bg-gradient-to-br from-[#9D00FF]/10 via-[#0A0A1A] to-[#1a1a2e]/20" />
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-indigo-500/20 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-pink-500/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-[#9D00FF]/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#FFFFFF]/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
@@ -30,7 +30,7 @@ export default function Hero() {
           transition={{ duration: 0.5 }}
           className="mb-6"
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-indigo-500/20 to-pink-500/20 border border-indigo-500/30 text-sm text-indigo-400">
+          <span className="inline-block px-4 py-2 rounded-full bg-gradient-to-r from-[#9D00FF]/20 to-[#00FFFF]/20 border border-[#9D00FF]/30 text-sm text-[#00FFFF]">
             Olá, seja bem-vindo! 👋
           </span>
         </motion.div>
@@ -73,7 +73,7 @@ export default function Hero() {
             href={personalInfo.social.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/25"
+            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-[#9D00FF]/25"
           >
             <GitHubIcon />
           </a>
@@ -81,13 +81,13 @@ export default function Hero() {
             href={personalInfo.social.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/25"
+            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-[#9D00FF]/25"
           >
             <LinkedInIcon />
           </a>
           <a
             href={`mailto:${personalInfo.email}`}
-            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-indigo-500/25"
+            className="p-3 rounded-xl bg-slate-800 hover:bg-slate-700 transition-all hover:scale-110 hover:shadow-lg hover:shadow-[#9D00FF]/25"
           >
             <Mail className="w-6 h-6" />
           </a>
@@ -98,7 +98,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-indigo-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25"
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] hover:from-[#B54DFF] hover:to-[#4DFFFF] transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9D00FF]/25 text-[#0A0A1A] font-semibold"
         >
           Explore Meu Trabalho
         </motion.a>

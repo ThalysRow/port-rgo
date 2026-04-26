@@ -9,8 +9,10 @@ const GitHubIcon = () => (
 );
 
 export default function Projects() {
+  const duplicatedProjects = [...projects, ...projects];
+
   return (
-    <section id="projects" className="py-20 md:py-32 px-4">
+    <section id="projects" className="py-20 md:py-32 px-4 overflow-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -22,21 +24,21 @@ export default function Projects() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Meus <span className="gradient-text">Projetos</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] mx-auto rounded-full" />
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
             Projetos selecionados que demonstram minha experiência e habilidades
           </p>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 gap-6 md:gap-8">
-          {projects.map((project, index) => (
+        <div className="carousel-container flex gap-6 md:gap-8 py-8">
+          {duplicatedProjects.map((project, index) => (
             <motion.div
-              key={project.id}
+              key={`${project.id}-${index}`}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group relative rounded-2xl overflow-hidden bg-slate-800/50 border border-slate-700/50 hover:border-indigo-500/50 transition-all hover:shadow-xl hover:shadow-indigo-500/10"
+              className="group relative flex-shrink-0 w-[350px] md:w-[400px] rounded-2xl overflow-hidden bg-slate-800/50 border border-slate-700/50 hover:border-[#9D00FF]/50 transition-all hover:shadow-xl hover:shadow-[#9D00FF]/10"
             >
               <div className="relative aspect-video overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent z-10" />
@@ -48,7 +50,7 @@ export default function Projects() {
               </div>
 
               <div className="relative p-6 z-20 -mt-4">
-                <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-indigo-400 transition-colors">
+                <h3 className="text-xl md:text-2xl font-bold mb-2 group-hover:text-[#00FFFF] transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-slate-400 mb-4 line-clamp-2">
@@ -71,7 +73,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-300 hover:text-indigo-400 transition-colors"
+                    className="flex items-center gap-2 text-slate-300 hover:text-[#00FFFF] transition-colors"
                   >
                     <GitHubIcon />
                     <span>Código</span>
@@ -80,7 +82,7 @@ export default function Projects() {
                     href={project.live}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-300 hover:text-pink-400 transition-colors"
+                    className="flex items-center gap-2 text-slate-300 hover:text-[#9D00FF] transition-colors"
                   >
                     <ExternalLink className="w-5 h-5" />
                     <span>Deploy</span>
@@ -102,7 +104,7 @@ export default function Projects() {
             href="https://github.com/thalyson"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-indigo-500 text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full border-2 border-[#9D00FF] text-[#00FFFF] hover:bg-[#9D00FF] hover:text-white transition-all"
           >
             Ver Todos os Projetos
             <ExternalLink className="w-4 h-4" />

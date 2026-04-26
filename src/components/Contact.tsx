@@ -46,7 +46,7 @@ export default function Contact() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Entre em <span className="gradient-text">Contato</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] mx-auto rounded-full" />
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
             Tem um projeto em mente? Vamos conversar sobre como posso ajudar
           </p>
@@ -63,8 +63,8 @@ export default function Contact() {
             <h3 className="text-2xl font-bold">Informações de Contato</h3>
             
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/30 border border-slate-700/30">
-              <div className="p-3 rounded-xl bg-gradient-to-br from-indigo-500/20 to-pink-500/20">
-                <Mail className="w-6 h-6 text-indigo-400" />
+              <div className="p-3 rounded-xl bg-gradient-to-br from-[#9D00FF]/20 to-[#00FFFF]/20">
+                <Mail className="w-6 h-6 text-[#00FFFF]" />
               </div>
               <div>
                 <p className="text-slate-400 text-sm">Email</p>
@@ -73,8 +73,8 @@ export default function Contact() {
             </div>
 
             <div className="flex items-center gap-4 p-4 rounded-2xl bg-slate-800/30 border border-slate-700/30">
-              <div className="p-3 rounded-xl bg-gradient-to-br from-indigo-500/20 to-pink-500/20">
-                <MapPin className="w-6 h-6 text-pink-400" />
+              <div className="p-3 rounded-xl bg-gradient-to-br from-[#9D00FF]/20 to-[#00FFFF]/20">
+                <MapPin className="w-6 h-6 text-[#9D00FF]" />
               </div>
               <div>
                 <p className="text-slate-400 text-sm">Localização</p>
@@ -87,7 +87,7 @@ export default function Contact() {
                 href={personalInfo.social.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-indigo-500/50 transition-all hover:scale-105"
+                className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-[#9D00FF]/50 transition-all hover:scale-105"
               >
                 <GitHubIcon />
               </a>
@@ -95,7 +95,7 @@ export default function Contact() {
                 href={personalInfo.social.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-indigo-500/50 transition-all hover:scale-105"
+                className="p-4 rounded-xl bg-slate-800/30 border border-slate-700/30 hover:border-[#9D00FF]/50 transition-all hover:scale-105"
               >
                 <LinkedInIcon />
               </a>
@@ -117,7 +117,7 @@ export default function Contact() {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all text-white placeholder-slate-500"
+                className="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 focus:border-[#9D00FF] focus:ring-2 focus:ring-[#9D00FF]/20 outline-none transition-all text-white placeholder-slate-500"
                 placeholder="Seu nome"
               />
             </div>
@@ -129,7 +129,7 @@ export default function Contact() {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                className="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 outline-none transition-all text-white placeholder-slate-500"
+                className="w-full px-4 py-3 rounded-xl bg-slate-800/50 border border-slate-700/50 focus:border-[#9D00FF] focus:ring-2 focus:ring-[#9D00FF]/20 outline-none transition-all text-white placeholder-slate-500"
                 placeholder="seu@email.com"
               />
             </div>
@@ -149,7 +149,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-indigo-600 to-pink-600 hover:from-indigo-500 hover:to-pink-500 transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/25 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] hover:from-[#FF8533] hover:to-[#FFE833] transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9D00FF]/25 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <span>Enviando...</span>

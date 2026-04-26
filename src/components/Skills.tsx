@@ -37,7 +37,7 @@ export default function Skills() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Minhas <span className="gradient-text">Skills</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] mx-auto rounded-full" />
           <p className="text-slate-400 mt-4 max-w-2xl mx-auto">
             Tecnologias e ferramentas que domino para criar projetos excepcionais
           </p>
@@ -51,10 +51,10 @@ export default function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="group p-4 md:p-6 rounded-2xl bg-slate-800/30 border border-slate-700/30 hover:border-indigo-500/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-indigo-500/10"
+              className="group p-4 md:p-6 rounded-2xl bg-slate-800/30 border border-slate-700/30 hover:border-[#9D00FF]/50 transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9D00FF]/10"
             >
               <div className="flex items-center gap-3 mb-4">
-                <div className="p-2 rounded-xl bg-gradient-to-br from-indigo-500/20 to-pink-500/20 group-hover:from-indigo-500/30 group-hover:to-pink-500/30 transition-all">
+                <div className="p-2 rounded-xl bg-gradient-to-br from-[#9D00FF]/20 to-[#00FFFF]/20 group-hover:from-[#9D00FF]/30 group-hover:to-[#00FFFF]/30 transition-all">
                   {iconMap[skill.iconName]}
                 </div>
                 <span className="text-sm md:text-base font-medium text-slate-200 group-hover:text-white transition-colors">
@@ -67,7 +67,7 @@ export default function Skills() {
                   whileInView={{ width: `${skill.level}%` }}
                   viewport={{ once: true }}
                   transition={{ duration: 1, delay: index * 0.05 + 0.2, ease: 'easeOut' }}
-                  className="absolute inset-y-0 left-0 bg-gradient-to-r from-indigo-500 to-pink-500 rounded-full"
+                  className="absolute inset-y-0 left-0 bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] rounded-full"
                 />
               </div>
               <div className="flex justify-end mt-1">

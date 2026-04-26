@@ -16,7 +16,7 @@ export default function About() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4">
             Sobre <span className="gradient-text">Mim</span>
           </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-pink-500 mx-auto rounded-full" />
+          <div className="w-24 h-1 bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] mx-auto rounded-full" />
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -28,14 +28,14 @@ export default function About() {
             className="relative"
           >
             <div className="w-full aspect-square max-w-md mx-auto relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-indigo-500 to-pink-500 rounded-3xl transform rotate-6" />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#9D00FF] to-[#00FFFF] rounded-3xl transform rotate-6" />
               <div className="absolute inset-0 bg-slate-800 rounded-3xl overflow-hidden">
                 <img 
                   src="/img/Eu.jpeg" 
                   alt={personalInfo.name} 
                   className="w-full h-full object-cover object-top"
                 />
-                <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 to-pink-900/30" />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#9D00FF]/30 to-[#00FFFF]/30" />
               </div>
             </div>
           </motion.div>
@@ -49,7 +49,7 @@ export default function About() {
           >
             <p className="text-slate-300 text-lg leading-relaxed">
               Sou um desenvolvedor Full Stack com paixão por criar soluções inovadoras e experiências digitais memoráveis. 
-              Com mais de <span className="text-indigo-400 font-semibold">{personalInfo.stats.experience} anos</span> de experiência, 
+              Com mais de <span className="text-[#00FFFF] font-semibold">{personalInfo.stats.experience} anos</span> de experiência, 
               trabalho com as tecnologias mais modernas do mercado.
             </p>
             <p className="text-slate-300 text-lg leading-relaxed">
@@ -59,21 +59,21 @@ export default function About() {
             </p>
             
             <div className="flex items-center gap-2 text-slate-400">
-              <MapPin className="w-5 h-5 text-indigo-400" />
+              <MapPin className="w-5 h-5 text-[#9D00FF]" />
               <span>{personalInfo.location}</span>
             </div>
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50">
                 <div className="flex items-center gap-3 mb-2">
-                  <FolderGit className="w-5 h-5 text-indigo-400" />
+                  <FolderGit className="w-5 h-5 text-[#00FFFF]" />
                   <span className="text-slate-400 text-sm">Projetos</span>
                 </div>
                 <p className="text-3xl font-bold gradient-text">{personalInfo.stats.projects}+</p>
               </div>
               <div className="p-4 rounded-2xl bg-slate-800/50 border border-slate-700/50">
                 <div className="flex items-center gap-3 mb-2">
-                  <Users className="w-5 h-5 text-pink-400" />
+                  <Users className="w-5 h-5 text-[#9D00FF]" />
                   <span className="text-slate-400 text-sm">Clientes</span>
                 </div>
                 <p className="text-3xl font-bold gradient-text">{personalInfo.stats.clients}+</p>

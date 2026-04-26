@@ -13,7 +13,7 @@ body {
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, #6366f1, #ec4899, #06b6d4);
+  background: linear-gradient(135deg, #9D00FF, #00FFFF);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -24,18 +24,49 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #1e293b;
+  background: #0A0A1A;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #6366f1, #ec4899);
+  background: linear-gradient(135deg, #9D00FF, #00FFFF);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #4f46e5, #db2777);
+  background: linear-gradient(135deg, #B54DFF, #4DFFFF);
 }
 
 .delay-1000 {
   animation-delay: 1000ms;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.carousel-container {
+  animation: scroll-left 30s linear infinite;
+}
+
+.carousel-container:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 8s linear infinite;
+  display: inline-block;
 }
