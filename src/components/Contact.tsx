@@ -149,7 +149,7 @@ export default function Contact() {
             <button
               type="submit"
               disabled={isSubmitting}
-              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] hover:from-[#FF8533] hover:to-[#FFE833] transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9D00FF]/25 disabled:opacity-50 disabled:cursor-not-allowed"
+              className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-[#9D00FF] to-[#00FFFF] hover:from-[#B54DFF] hover:to-[#4DFFFF] transition-all hover:scale-105 hover:shadow-lg hover:shadow-[#9D00FF]/25 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isSubmitting ? (
                 <span>Enviando...</span>
